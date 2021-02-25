@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import {useState} from 'react';
-import './logos/logos';
+import sunLogo from './sun.svg';
+import cloudLogo from './clouds.svg';
+import snowFlake from './snowflake.svg';
+import rainLogo from './rain.svg';
 import './App.css';
 
 const api = {
