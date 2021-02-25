@@ -55,7 +55,7 @@ function App() {
 
   return (
     <div className={(typeof weather.sys != 'undefined')?((weather.main.temp < 10)? 'App cold':'App'):'App'}>
-      <SearchBox  search={search} placeholder={"Enter a city... "}/>
+      <SearchBox  search={search} placeholder={"Enter a city and 'ENTER'"}/>
       {(typeof weather.sys != "undefined")?(
         <header className="App-header">
         
