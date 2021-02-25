@@ -11,11 +11,11 @@ const api = {
   base: "https://api.openweathermap.org/data/2.5/"
 }
 
-function SearchBox({search}){
+function SearchBox({search, placeholder}){
   return(
     <div>
       <input type="text" 
-      onKeyPress={search}
+      onKeyPress={search} placeholder={placeholder}
       className="userInputField"></input>
     </div>
   );
@@ -55,7 +55,7 @@ function App() {
 
   return (
     <div className={(typeof weather.sys != 'undefined')?((weather.main.temp < 10)? 'App cold':'App'):'App'}>
-      <SearchBox  search={search}/>
+      <SearchBox  search={search} placeholder={"Enter a city... "}/>
       {(typeof weather.sys != "undefined")?(
         <header className="App-header">
         
