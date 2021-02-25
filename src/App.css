@@ -1,31 +1,58 @@
 .App {
-  text-align: center;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url('images/warm.jpg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-out;
+  height: 100vh;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.App.cold{
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url('images/cold.jpg');
 }
 
 .App-logo {
+  margin-top: 5%;
   height: 40vmin;
   pointer-events: none;
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-logo-cloud {
+  margin-top: 5%;
+  height: 40vmin;
+  pointer-events: none;
+ 
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.weather-data{
+  margin-top: 25%;
+  text-align: center;
+}
+
+.temp{
+  font-size: 5rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +62,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/****** Input ******/
+.userInputField{
+  position: absolute;
+  background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2));
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%,0);
+  font-size: 1rem;
+  height: 2rem;
+  padding: 1rem;
+  border-radius: 25px;
+  outline: none;
+  box-sizing: border-box;
+
 }
