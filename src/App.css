@@ -15,25 +15,25 @@
 }
 
 .App-logo {
-  margin-top: 5%;
-  height: 40vmin;
+  margin-top: 1rem;
+  height: 20rem;
   pointer-events: none;
  
 }
 
 .App-logo-cloud {
-  margin-top: 5%;
-  height: 40vmin;
+  margin-top: 1rem;
+  height: 20rem;
   pointer-events: none;
  
 }
 
 .App-header {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: calc(10px + 2vmin);
+  /* font-size: calc(10px + 2vmin); */
   color: white;
 }
 
@@ -42,12 +42,13 @@
 }
 
 .weather-data{
-  margin-top: 25%;
+  margin-top: 10rem;
+  font-size: 2rem;
   text-align: center;
 }
 
 .temp{
-  font-size: 5rem;
+  font-size: 8rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -73,8 +74,9 @@
   top: 10%;
   left: 50%;
   transform: translate(-50%,0);
-  font-size: 1rem;
-  height: 2rem;
+  font-size: 1.5rem;
+  width: 20rem;
+  height: 3rem;
   padding: 1rem;
   border-radius: 25px;
   outline: none;

@@ -4,7 +4,7 @@ import sunLogo from './sun.svg';
 import cloudLogo from './clouds.svg';
 import snowFlake from './snowflake.svg';
 import rainLogo from './rain.svg';
-import './App.css';
+import './style.css';
 
 const api = {
   key: "ff27400b69f75694604ddba810397053",
@@ -61,7 +61,7 @@ function App() {
         
         <div className="weather-data">
           <h1>{weather.name},{weather.sys['country']}</h1>
-          <h2 className="temp">{Math.round(weather.main.temp)}°</h2>
+          <p className="temp">{Math.round(weather.main.temp)}°</p>
         </div>
         {getLogo()}
         

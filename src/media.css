@@ -1,5 +1,25 @@
-@media only screen and (min-width: 500px) {
-    .App {
-      width: max-content;
-    }
+@media only screen and (min-width: 800px) {
+  .userInputField{
+    height: 4rem;
+    width: 25rem;
+    font-size: 1.5rem;
   }
+  .App-logo,.App-logo-cloud {
+    margin-top: 5rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .weather-data{
+    font-size: 1.5rem;
+  }
+  .temp{
+    font-size: 5rem;
+  }
+  .App-logo,.App-logo-cloud {
+    margin-top: 1rem;
+    height: 10rem;
+    pointer-events: none;
+   
+  }
+}
